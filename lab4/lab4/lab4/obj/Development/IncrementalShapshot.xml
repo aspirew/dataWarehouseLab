@@ -1,0 +1,75 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>PierwszyProjektKostek</Database>
+    <Server>DESKTOP-C32EFKJ\SUPERSERWER</Server>
+    <ConnectionString>Data Source=DESKTOP-C32EFKJ\SUPERSERWER;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>/bIfVKHnsRzQ7OK9BVYg9rNU1dc=29.03.2021 17:03:5229.03.2021 17:03:51</TimeStamp>
+        <ID>
+          <String>Adventure Works2016</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>qQOcIPuDzgKbdY9cI+UMoQ4h0do=29.03.2021 17:05:3729.03.2021 17:04:02</TimeStamp>
+        <ID>
+          <String>Adventure Works2016</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>A06I7m8PTMt7hguYesdMecsaucQ=29.03.2021 17:10:0829.03.2021 17:10:08</TimeStamp>
+        <ID>
+          <String>DIM SALESPERSON</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Dn18hKQtdS9sUNLBjt8kn4Wi0J8=29.03.2021 17:10:0829.03.2021 17:10:08</TimeStamp>
+        <ID>
+          <String>DIM PRODUCT</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>pgalTNMrnDOHzjvWsNmzwUcFBWE=29.03.2021 17:10:0829.03.2021 17:10:08</TimeStamp>
+        <ID>
+          <String>DIM CUSTOMER</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>umpLDGbT79OKmsM5iTq9zXO2Qow=29.03.2021 17:10:0829.03.2021 17:10:08h3HXNku7zcuEOpdSbdvhD9ji+Lk=29.03.2021 17:10:0829.03.2021 17:10:08</TimeStamp>
+        <ID>
+          <String>Adventure Works2016</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>V+yYCdXXpYosA5iEgg/JqVxYQek=28.03.2021 17:04:4628.03.2021 17:04:46</TimeStamp>
+      <ID>
+        <String>PierwszyProjektKostek</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>false</ProcessingComplete>
+  <LastDeployed>2021-03-29T16:38:06.983333Z</LastDeployed>
+</DeploymentSnapshot>
