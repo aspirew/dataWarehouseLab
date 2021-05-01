@@ -1,0 +1,1145 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d0bb7493-0a68-42b4-8642-efbf424504eb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Adventure Works2016</ID>
+  <Name>Adventure Works2016</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="22" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-11656" scrolltop="-3871" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="37174" y="25400" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_CUSTOMER" left="5833" top="0" logicalid="11" controlid="1" masterid="0" hint1="0" hint2="0" width="3731" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000930e00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Behrendt_DIM_CUSTOMER" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_SALESPERSON" left="5833" top="13637" logicalid="12" controlid="2" masterid="0" hint1="0" hint2="0" width="3731" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000930e0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Behrendt_DIM_SALESPERSON" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_TIME" left="20" top="6818" logicalid="13" controlid="3" masterid="0" hint1="0" hint2="0" width="3545" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000d90d00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Behrendt_DIM_TIME" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FACT_SALES" left="5965" top="6395" logicalid="14" controlid="4" masterid="0" hint1="0" hint2="0" width="3466" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008a0d0000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Behrendt_FACT_SALES" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_PRODUCT" left="11831" top="6395" logicalid="15" controlid="5" masterid="0" hint1="0" hint2="0" width="3572" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000f40d0000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Behrendt_DIM_PRODUCT" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7299" top="3496" logicalid="16" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[fk_cust]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="4" sourceattachpoint="7" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7698" y="3995" />
+              <point x="7698" y="6395" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7299" top="10937" logicalid="17" controlid="7" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[fk_sales]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="4" sourceattachpoint="6" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7698" y="13637" />
+              <point x="7698" y="11237" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3265" top="7316" logicalid="18" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_SALES-DIM_TIME]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="4" sourceattachpoint="17" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3565" y="7715" />
+              <point x="4765" y="7715" />
+              <point x="4765" y="7716" />
+              <point x="5965" y="7716" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3265" top="8966" logicalid="19" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_SALES-DIM_TIME1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="4" sourceattachpoint="23" destattachpoint="20" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3565" y="9365" />
+              <point x="4765" y="9365" />
+              <point x="4765" y="9366" />
+              <point x="5965" y="9366" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9131" top="8417" logicalid="20" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[fk_prod]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="4" sourceattachpoint="22" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11831" y="8816" />
+              <point x="9431" y="8816" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-11656</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3871</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="7831a6f6-c4eb-4536-baba-b914f4cea05d">
+      <ID>DIM TIME</ID>
+      <Name>DIM TIME</Name>
+      <DimensionID>DIM TIME</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6674c23d-e2ed-4de7-8c60-c48df2c0946f">
+          <AttributeID>PK TIME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="608b5c76-e979-43c7-ae4e-7105034382f9">
+          <AttributeID>Rok</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="02c3bbe6-a601-452a-9667-948827d1d4cc">
+          <AttributeID>Kwartal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2f45df94-95aa-43e0-bc90-456976477d95">
+          <AttributeID>Miesiac</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1be8ee31-b412-4d31-9908-7554aa8a84f1">
+          <AttributeID>Miesiac Slownie</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="138156dc-33a0-417d-84ad-cee58f4999fc">
+          <AttributeID>Dzien Tyg Slownie</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fcd7b076-dc63-41f4-93f5-37224374481b">
+          <AttributeID>Dzien Miesiaca</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="0715a28d-90ae-476f-a123-bcc18fb740f1">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="e7d755b4-c38e-42e6-a487-335991871c3d">
+      <ID>DIM SALESPERSON</ID>
+      <Name>DIM SALESPERSON</Name>
+      <DimensionID>DIM SALESPERSON</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e4ea6be7-9f7b-49cb-9cb4-1fe6920fda81">
+          <AttributeID>Sales Person ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e61428f3-1926-406c-9a35-627d731274b7">
+          <AttributeID>Names</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b9bbcbc7-1153-4cba-ab0d-b035caf58266">
+          <AttributeID>Title</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9fbe01b8-a4da-46b7-8676-c58847024ad1">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="500210c6-39b1-4047-8554-8cc3dbded3dd">
+          <AttributeID>Country Region Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="29452470-9e1c-4352-8a13-857cfa260d0c">
+          <AttributeID>Group</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="5dbcde62-48f9-4b43-ad36-9b0d2063852f">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="55f6ac3b-1726-456a-a4e5-4df6f5a835d4">
+      <ID>DIM PRODUCT</ID>
+      <Name>DIM PRODUCT</Name>
+      <DimensionID>DIM PRODUCT</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="59d341a3-54c3-4510-97a4-3576e3d317d9">
+          <AttributeID>Product ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cef38527-7241-4a58-a4c6-5d7e8994d560">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3761be51-e8bc-4d47-9b6a-f0fd5d1243f8">
+          <AttributeID>List Price</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="32b8f375-bbc8-4390-82a1-da287adf1317">
+          <AttributeID>Color</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="287c5565-4164-46ca-b541-1ef24c663e08">
+          <AttributeID>Sub Category Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a9fdec57-2eed-4c27-bc26-8c5ffa1ef13f">
+          <AttributeID>Category Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="daef6493-b540-4075-ac4d-41c42b0294de">
+          <AttributeID>Weight</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="94e59745-c05f-4e8c-b651-1235d5b4daa4">
+          <AttributeID>Size</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c339c9d2-2b18-4e6c-b872-78f73a08f8d3">
+          <AttributeID>Is Purchased</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="83bd0353-0ecb-4d62-a37a-c3b240fc079a">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="102473b7-d33c-4a25-b9bf-a19c4bde86d7">
+      <ID>DIM CUSTOMER</ID>
+      <Name>DIM CUSTOMER</Name>
+      <DimensionID>DIM CUSTOMER</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a4075451-c793-4fb9-b7cf-0d97acf72fd8">
+          <AttributeID>Customer ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a06deb65-32ea-45e8-89ab-80a694ec30bd">
+          <AttributeID>Names</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a71fdde1-56d6-4458-9ce6-64988be90998">
+          <AttributeID>Title</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d82a25e6-f9c5-4d64-acc1-c998216a7d35">
+          <AttributeID>City</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5bf99e36-b548-4074-b531-e457949b54c1">
+          <AttributeID>Territory Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5e97e065-1a8d-437a-923b-634f4a63edcf">
+          <AttributeID>Country Region Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bba1982d-6624-4d01-bb62-ae77f37de899">
+          <AttributeID>Group</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="1c20f080-ef42-4ecc-a8a3-37430fb5b516">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="ca370681-a79a-4399-8af8-c4e9fb205059">
+      <ID>Order Date</ID>
+      <Name>Order Date</Name>
+      <DimensionID>DIM TIME</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4ce50ebc-6e1f-42ae-ae89-9b3438f819a5">
+          <AttributeID>PK TIME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b4b05b30-315a-44e3-b08b-f2066d21b6bc">
+          <AttributeID>Rok</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9899da6c-b792-41ca-800a-c0405b7691bb">
+          <AttributeID>Kwartal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bf3a9566-5337-4ae5-8b30-c3b0ce1034f6">
+          <AttributeID>Miesiac</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ff0296e7-e1c1-4d16-ae0a-ddccae2b73ce">
+          <AttributeID>Miesiac Slownie</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a6d684db-08aa-4161-8eb6-648cf1c670b2">
+          <AttributeID>Dzien Tyg Slownie</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b3db461e-149c-43be-8b13-bc7bc5af2c48">
+          <AttributeID>Dzien Miesiaca</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="e6c295e8-90d2-40e0-becb-e66c4731a936">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="f32239b7-9acc-439b-bc7d-2c32d2c159e6">
+      <ID>Ship Date</ID>
+      <Name>Ship Date</Name>
+      <DimensionID>DIM TIME</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ff2304ac-7020-4013-80c2-93e4db835173">
+          <AttributeID>PK TIME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="23256c45-0cb2-474e-a26a-5d3f30409e2f">
+          <AttributeID>Rok</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="36a316b1-5845-4b81-bac3-d457e2acddbf">
+          <AttributeID>Kwartal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="31a615d7-0e78-4f7e-b3be-230299e1854c">
+          <AttributeID>Miesiac</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1c6d53df-ed28-474a-b0e9-16264db12e81">
+          <AttributeID>Miesiac Slownie</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="72ed4f07-0246-455f-84a6-db675bfffa13">
+          <AttributeID>Dzien Tyg Slownie</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="24f2a63f-9547-4832-a8a4-9a1190661eeb">
+          <AttributeID>Dzien Miesiaca</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="7446e175-ca42-467e-83a5-5e8b385fecf5">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="58ebfcb9-ab8e-4fea-abb8-851593b43a54">
+      <ID>FACT SALES</ID>
+      <Name>FACT SALES</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="52e0c29c-adad-49af-a4ea-c1d8f4a10619">
+          <ID>Order Qty</ID>
+          <Name>Order Qty</Name>
+          <Source dwd:design-time-name="88ec28f6-ffec-4899-8991-25ee94aefbf9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6082b78c-09eb-49ba-989b-39118ba93109">
+              <TableID>Behrendt_FACT_SALES</TableID>
+              <ColumnID>OrderQty</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bd72c1bf-4d36-45ab-bbda-d9627e4123fd">
+          <ID>Unit Price</ID>
+          <Name>Unit Price</Name>
+          <Source dwd:design-time-name="09f36ff0-3c74-403a-965c-49722afd8c3e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="46c2ca17-2f20-4fa1-a353-03f32c4b45bf">
+              <TableID>Behrendt_FACT_SALES</TableID>
+              <ColumnID>UnitPrice</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2e1db4c0-32b2-4a79-9e84-51f66b01161d">
+          <ID>Unit Price Discount</ID>
+          <Name>Unit Price Discount</Name>
+          <Source dwd:design-time-name="04491e98-787d-4cb7-91b5-e70c0967c682">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cb053631-1685-43a6-80e3-5800945b159f">
+              <TableID>Behrendt_FACT_SALES</TableID>
+              <ColumnID>UnitPriceDiscount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="78907093-3d42-4117-9290-e76c8d6902f7">
+          <ID>Line Total</ID>
+          <Name>Line Total</Name>
+          <Source dwd:design-time-name="1e21b952-f1a7-449f-9bed-2124b33ffdd5">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d74118c8-663e-4bf7-8ca9-8c5b61e47f1c">
+              <TableID>Behrendt_FACT_SALES</TableID>
+              <ColumnID>LineTotal</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b4b02597-9607-4f8f-9dd1-a7a1c0ab317a">
+          <ID>FACT SALES Count</ID>
+          <Name>FACT SALES Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="651018bd-b742-43e4-a217-be258fcf0e7f">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="395b33f2-2186-4c5d-8990-2f9b23d5bd60">
+              <TableID>Behrendt_FACT_SALES</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8711bc6a-1d42-4a8b-9d3f-4c02829e8784">
+          <ID>Maximum Unit Price Discount</ID>
+          <Name>Maximum Unit Price Discount</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="53a7d688-c88b-4934-839f-670dd5601e81">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="193e4f75-ee82-46f1-9080-4e1b2c9000b9">
+              <TableID>Behrendt_FACT_SALES</TableID>
+              <ColumnID>UnitPriceDiscount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1fb5bce5-f767-41f9-995f-fd05bf9e902f">
+          <ID>Maximum Order Qty</ID>
+          <Name>Maximum Order Qty</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="b049b90e-23d3-4ae7-91e0-dfa3e96a7e59">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6d2ed396-3dda-4e09-97bd-6d503b337250">
+              <TableID>Behrendt_FACT_SALES</TableID>
+              <ColumnID>OrderQty</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8fb8672c-a1f6-4c5d-9c5e-30c58f6b8228">
+          <ID>Helper Weight</ID>
+          <Name>Helper Weight</Name>
+          <Source dwd:design-time-name="cd7f7744-5231-48ec-b86b-db51ca95ede0">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5a43b419-877e-4329-b5b7-02b3ea3a026e">
+              <TableID>Behrendt_FACT_SALES</TableID>
+              <ColumnID>helperWeight</ColumnID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>121307</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0da4794f-86a7-4183-8258-736598cddbf7">
+          <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f4c88aa6-9ffb-4daf-a603-741009ac2470">
+              <AttributeID>Sales Person ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="696692c9-3088-4ffc-9517-f0b889ba2234">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6f4d7a11-a36d-4b68-9314-7bc7735adc73">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>SalesPersonID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2ad474ef-bd12-46a4-ab08-c8ee28cbaf4b">
+          <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2e4208f6-4698-406a-b79e-9202be47a67d">
+              <AttributeID>Product ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c895e2e8-5e05-4499-94d9-62d3b832ed72">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="da6ad47f-be2a-4995-b07c-6083cfc68662">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>ProductID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ea487020-d920-43d1-bb66-d6135be9de62">
+          <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="52bdd5fe-bb35-42d3-b316-5d4bc5b0ac82">
+              <AttributeID>Customer ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cbab4a52-1b98-4797-9669-a7131b7216c2">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c698f3ee-3c3d-4445-9920-dd34e82414c0">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>CustomerID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ea06bf42-5252-4bd7-b844-63e953e6e5eb">
+          <CubeDimensionID>Order Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6248094f-1c26-4d53-9d73-150da8dbeec1">
+              <AttributeID>PK TIME</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="77ccc470-d94d-4ef3-9051-8e475c1587a4">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4f3d583a-9047-4c7c-b764-bc5f187893fe">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>OrderDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="66b8b67e-ed1a-466f-871d-09385adb4b90">
+          <CubeDimensionID>Ship Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ff039971-cdf0-479e-aec4-57de675a8246">
+              <AttributeID>PK TIME</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4c4e9727-3754-4a07-bb99-37105081d629">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="49855eeb-5e1e-4963-a219-eb9b9e013c17">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>ShipDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="ea7ce815-4f9e-4088-8a3f-8d93586e2a9f">
+      <ID>FACT SALES 1</ID>
+      <Name>FACT SALES 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="14c98f26-8a4e-4d03-ad75-54d657b37178">
+          <ID>Product ID Distinct Count</ID>
+          <Name>Product ID Distinct Count</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="439d2194-17b5-4751-ba11-16e51c775d1f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="13d395a5-d1f9-40c5-86ef-d3a4a93c53da">
+              <TableID>Behrendt_FACT_SALES</TableID>
+              <ColumnID>ProductID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>121307</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9417f834-bd02-4665-be7e-a1b5e9164ada">
+          <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2ccee5da-b8fc-40c1-a670-36b51218610b">
+              <AttributeID>Sales Person ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4125ddd6-3cbc-4e3c-a0a9-55d842041f18">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0dd923bd-f5bf-4a1b-993c-7b0bd6c88af2">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>SalesPersonID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="aba1e0c0-2294-421b-8065-25edba4f3d87">
+          <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7be973bc-2a65-4d7f-a6e6-851a3168ccd1">
+              <AttributeID>Product ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="00aee685-8719-4a26-9652-1a49e9772256">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3ba6a230-d895-458d-b94f-532771ba90c3">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>ProductID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="712ed01e-2fc6-4c12-baa3-d526f69cc38f">
+          <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8db8e9ab-23e8-4dc8-afb6-c4648193e8ab">
+              <AttributeID>Customer ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3fb2a76d-ee9b-4fff-836a-822b8f1bba63">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7649092a-80f7-4778-af4a-03d006763334">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>CustomerID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ef7e33a0-dfaa-4bc5-8562-4886d0eddf17">
+          <CubeDimensionID>Order Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7380129a-d5e0-4bf2-a6cd-2f3503688394">
+              <AttributeID>PK TIME</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5cebf9cf-7fb7-41ab-a021-6ca9ce27a4f8">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6e84d2d7-35a9-4a3e-a65f-4df5eea9e7cd">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>OrderDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="338e2f67-ac47-48bb-84c1-b58d5c831c0a">
+          <CubeDimensionID>Ship Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7f99ae3e-de4e-412a-942b-cfbf04f9dfbe">
+              <AttributeID>PK TIME</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8cc75ff4-a332-4fc6-a8e9-62253a6a7ae2">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f9553ee2-2c9b-41d7-88db-82379557eff1">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>ShipDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="c894958e-c32c-46b4-902c-a8e96d8052d0">
+      <ID>FACT SALES 2</ID>
+      <Name>FACT SALES 2</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="095c5f1b-1216-4461-83ab-917903c5d151">
+          <ID>Product ID Distinct Count - FACT SALES 2</ID>
+          <Name>Product ID Distinct Count - FACT SALES 2</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="7c51b75b-920a-408e-b539-5d1b338aebd7">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c5867afc-fc72-4377-a7e6-e0f0b03f8b87">
+              <TableID>Behrendt_FACT_SALES</TableID>
+              <ColumnID>ProductID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>121307</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c1814065-c62a-49d0-be19-302915e2a188">
+          <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b2a034a1-f804-4662-addb-c0833f2ef631">
+              <AttributeID>Sales Person ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ac4d90cb-1f93-4263-ab32-1f329cd7e46f">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1c9ec0dc-05da-4e2e-b11a-2752e2d1a3e4">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>SalesPersonID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="94f7bfd6-bcf1-483f-810e-2f0110614bce">
+          <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4d4e8978-6bed-484e-b9fe-6f8d463655cd">
+              <AttributeID>Product ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bb06f3c8-c731-46c8-9004-8db323be573a">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="78b9ca76-37a4-44f0-a421-a23f51de8b84">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>ProductID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eaf4506a-968c-4758-aeb4-8089d60750d6">
+          <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="30ca86fc-e2fc-4f4a-b366-57eb115b7fb9">
+              <AttributeID>Customer ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8237d602-48e7-4ac1-91af-0509db18c642">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="33711baf-48c4-4eb7-b441-bcc183a183cc">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>CustomerID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d711383e-4542-471f-8163-70c5f4175a6c">
+          <CubeDimensionID>Order Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cf77eb6b-a219-4320-b410-3c07e246ce82">
+              <AttributeID>PK TIME</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1b71491d-0bbe-4900-b55d-eda1ee8946ec">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="833ef200-0049-45bc-8896-35556019dbe6">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>OrderDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="af521087-2adf-4f83-aeed-c2c62934a113">
+          <CubeDimensionID>Ship Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1fd9e77b-2e60-4deb-a2d0-de5ea050b542">
+              <AttributeID>PK TIME</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c9d6aee1-82c5-4274-9248-2eaa3f68fecf">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="84005ac6-df62-465e-aa6b-ba6532df6dd2">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>ShipDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="6203475a-b7fb-423a-956d-c5dfd3f2a13a">
+      <ID>FACT SALES 3</ID>
+      <Name>FACT SALES 3</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="6eeb480f-cb5e-4af9-97cb-5e309e08b8bf">
+          <ID>Customer ID Distinct Count</ID>
+          <Name>Customer ID Distinct Count</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="12c28b72-0399-48a8-a70d-cdcce845d97b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="60e1d8ed-9309-4c62-8bf6-aee64ecc7a8e">
+              <TableID>Behrendt_FACT_SALES</TableID>
+              <ColumnID>CustomerID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>121307</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="64e7d871-530c-430a-ba74-18b61471b082">
+          <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b194f79d-8115-46d0-a887-22e839219efc">
+              <AttributeID>Sales Person ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f1d163f2-341e-4a14-9d9f-08d057a266b4">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="965a74c2-750d-496e-995a-a65992379d79">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>SalesPersonID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e5ef88c9-b27e-478c-baad-e975eb7be244">
+          <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b4f5822d-0210-4bc7-85ba-b92381000fa3">
+              <AttributeID>Product ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="26b4f4f7-f7d0-4613-ad68-54d1350c4534">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="321728a9-7d74-485b-8d19-16c8109593b2">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>ProductID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="12ad58a7-aa8a-4609-8ebe-ccfd64807ccc">
+          <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="442c9fb9-424e-4de0-adfe-f4b8d1f1a17a">
+              <AttributeID>Customer ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2e699206-4cad-4217-ac02-f33226e25696">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1c16125c-3513-404d-8815-5f19ec239efb">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>CustomerID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="81f7371c-5c2b-461e-bb69-7cc7d6d2360f">
+          <CubeDimensionID>Order Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="20107752-faad-4750-afd0-9b272ccd3bd6">
+              <AttributeID>PK TIME</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5202866e-e159-4437-8a0b-9917500c5266">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eb48187f-830f-4a47-8644-6ff998252534">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>OrderDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="54af989f-abf2-41fd-a259-18c32706b825">
+          <CubeDimensionID>Ship Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7f36bdeb-3bff-4777-b018-54cf85222340">
+              <AttributeID>PK TIME</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0109de61-fb8b-4aeb-8fee-b0825aaca162">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a1fcf149-96f1-489a-9582-044b042c2318">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>ShipDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="bea69ac7-2da1-4d7a-9885-dc71026203c8">
+      <ID>FACT SALES 4</ID>
+      <Name>FACT SALES 4</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="c1aeadc5-1240-4a0f-8835-39ce7898cc23">
+          <ID>Sales Person ID Distinct Count</ID>
+          <Name>Sales Person ID Distinct Count</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="241d498a-d32b-419c-8b18-771f9b020731">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f1664b3d-776b-4f8c-b0a2-ee569527f7cb">
+              <TableID>Behrendt_FACT_SALES</TableID>
+              <ColumnID>SalesPersonID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>121307</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0c4bb210-5405-4f7f-b55a-66851bad4a94">
+          <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e60917c5-7d49-4249-bc01-baaeaa58ab1b">
+              <AttributeID>Sales Person ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f857410f-baf8-4f4c-89ca-7571639cf668">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ce0208b6-ebb9-498a-8d6d-fb787f5dec5c">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>SalesPersonID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ca15fdc4-6ad8-4e2d-88c2-8373da5053e4">
+          <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2f49171f-abf2-4b43-bfa9-c119b0b72731">
+              <AttributeID>Product ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="75294d57-d3f7-49a9-ac9c-760ad433008c">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="70766065-1e8f-4c01-bcf9-7644c47bc810">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>ProductID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dfa875a1-616a-46a2-927a-cdf91d7b486a">
+          <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="52ec1a21-a26f-41f5-bc3f-53508ae888ce">
+              <AttributeID>Customer ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0f81fc6a-353b-4516-ad84-6f91632d9eb3">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="56d9e9a1-15eb-43a5-a560-72341bcb36c4">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>CustomerID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="141c5dcb-30ba-4dca-92dd-1eca035f1439">
+          <CubeDimensionID>Order Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cb09c23f-e93f-4ffc-86a2-61f26a4b5656">
+              <AttributeID>PK TIME</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="811e0739-4409-4503-a8d3-93ead7aeb167">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6cc8246c-a323-4990-8c9a-b5173c1215bf">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>OrderDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a64395fd-141f-4237-a7b9-5b1fbafbf437">
+          <CubeDimensionID>Ship Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7bbbce9e-b040-446c-9369-f8b7fde44835">
+              <AttributeID>PK TIME</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="52c21812-ccf7-4b92-84d0-c20f2d9e16a6">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="76c0f5b5-8566-4cfc-8473-a2bf44b70de1">
+                    <TableID>Behrendt_FACT_SALES</TableID>
+                    <ColumnID>ShipDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="061ce5b8-7356-455e-a109-f5af61f8ea31">
+    <DataSourceViewID>Adventure Works2016</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="a81ccddf-f0eb-49e1-a584-c3f9e8d63034">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE;  
+CREATE MEMBER CURRENTCUBE.[Measures].[Avg count]
+ AS [Measures].[Order Qty] / [Measures].[FACT SALES Count], 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'FACT SALES';  
+CREATE MEMBER CURRENTCUBE.[Measures].[Avg count weighted]
+ AS [Measures].[Helper Weight] / [Measures].[Unit Price], 
+VISIBLE = 1  ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>

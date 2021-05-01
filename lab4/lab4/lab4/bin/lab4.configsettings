@@ -13,18 +13,18 @@
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>DIM SALESPERSON</ID>
+        <ID>DIM CUSTOMER</ID>
       </Dimension>
       <Dimension>
         <ID>DIM PRODUCT</ID>
       </Dimension>
       <Dimension>
-        <ID>DIM CUSTOMER</ID>
+        <ID>DIM SALESPERSON</ID>
       </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>
-        <ID>Adventure Works2016</ID>
+        <ID>Adventure Works2016 2</ID>
         <MeasureGroups>
           <MeasureGroup>
             <ID>FACT SALES</ID>

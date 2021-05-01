@@ -1,0 +1,324 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/10/2021 1:45:09 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-C32EFKJ"
+  DTS:CreatorName="DESKTOP-C32EFKJ\rav"
+  DTS:DTSID="{38596C25-1C93-436C-ACCD-F141B3905E3A}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.152"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{0AF0EA57-C815-4059-A6B5-1EC32D9EA339}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-C32EFKJ\SUPERSERWER.AdventureWorks2016]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F1EEA9AC-8C33-4355-AA08-337E76E5CE8D}"
+      DTS:ObjectName="DESKTOP-C32EFKJ\SUPERSERWER.AdventureWorks2016">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-C32EFKJ\SUPERSERWER;Initial Catalog=AdventureWorks2016;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SMTP]"
+      DTS:CreationName="SMTP"
+      DTS:DTSID="{88C5D41A-6265-4AAD-AD91-68F3FE0D99E6}"
+      DTS:ObjectName="SMTP">
+      <DTS:ObjectData>
+        <SmtpConnectionManager
+          ConnectionString="SmtpServer=localhost;UseWindowsAuthentication=False;EnableSsl=False;"
+          ConnectByProxy="False" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SMTP Connection Manager]"
+      DTS:CreationName="SMTP"
+      DTS:DTSID="{45FF5649-74AE-4111-B63C-53D6A33B2C93}"
+      DTS:ObjectName="SMTP Connection Manager">
+      <DTS:ObjectData>
+        <SmtpConnectionManager
+          ConnectionString="SmtpServer=136.243.156.121;UseWindowsAuthentication=False;EnableSsl=False;"
+          ConnectByProxy="False" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Create"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Create"
+      DTS:DTSID="{cc36e5c4-136d-4068-a43e-79771871f91e}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F1EEA9AC-8C33-4355-AA08-337E76E5CE8D}"
+          SQLTask:SqlStatementSource="CREATE TABLE Behrendt.DIM_CUSTOMER&#xA;(&#xA;&#x9;CustomerID int NOT NULL PRIMARY KEY,&#xA;&#x9;FirstName nvarchar(50),&#xA;&#x9;LastName nvarchar(50),&#xA;&#x9;Title nvarchar(8),&#xA;&#x9;City nvarchar(30),&#xA;&#x9;TerritoryName nvarchar(50),&#xA;&#x9;CountryRegionCode nvarchar(3),&#xA;&#x9;[Group] nvarchar(50)&#xA;);&#xA;&#xA;CREATE TABLE Behrendt.DIM_PRODUCT&#xA;(&#xA;&#x9;ProductID int NOT NULL PRIMARY KEY,&#xA;&#x9;Name nvarchar(50),&#xA;&#x9;ListPrice money,&#xA;&#x9;Color nvarchar(15),&#xA;&#x9;SubCategoryName nvarchar(50),&#xA;&#x9;CategoryName nvarchar(50),&#xA;&#x9;Weight decimal(8,2),&#xA;&#x9;Size nvarchar(5),&#xA;&#x9;IsPurchased  BIT&#xA;);&#xA;&#xA;CREATE TABLE Behrendt.DIM_SALESPERSON&#xA;(&#xA;&#x9;SalesPersonID int NOT NULL PRIMARY KEY,&#xA;&#x9;FirstName nvarchar(50),&#xA;&#x9;LastName nvarchar(50),&#xA;&#x9;Title nvarchar(8),&#xA;&#x9;Gender nchar(1),&#xA;&#x9;CountryRegionCode nvarchar(3),&#xA;&#x9;[Group] nvarchar(50)&#xA;);&#xA;&#xA;CREATE TABLE Behrendt.FACT_SALES&#xA;(&#xA;&#x9;ProductID int,&#xA;&#x9;CustomerID int,&#xA;&#x9;SalesPersonID int,&#xA;&#x9;OrderDate int,&#xA;&#x9;ShipDate int,&#xA;&#x9;OrderQty smallint,&#xA;&#x9;UnitPrice money,&#xA;&#x9;UnitPriceDiscount money,&#xA;&#x9;LineTotal money&#xA;);&#xA;&#xA;CREATE TABLE Behrendt.DIM_TIME (&#xA;     PK_TIME INT NOT NULL PRIMARY KEY,&#xA;     Rok INT,&#xA;     Kwartal INT,&#xA;     Miesiac INT,&#xA;     Miesiac_slownie NVARCHAR(20),&#xA;     Dzien_tyg_slownie NVARCHAR(20),&#xA;     Dzien_miesiaca INT&#xA; );" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Delete"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Delete"
+      DTS:DTSID="{B63B54BA-5575-4BE7-BDEA-E09D3F2D9F06}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Delete"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F1EEA9AC-8C33-4355-AA08-337E76E5CE8D}"
+          SQLTask:SqlStatementSource="DROP TABLE IF EXISTS Behrendt.FACT_SALES;&#xA;DROP TABLE IF EXISTS Behrendt.DIM_CUSTOMER;&#xA;DROP TABLE IF EXISTS Behrendt.DIM_PRODUCT;&#xA;DROP TABLE IF EXISTS Behrendt.DIM_TIME;&#xA;&#xA;GO&#xA;IF (&#xA;SELECT COUNT(*) FROM  INFORMATION_SCHEMA.TABLES&#xA;WHERE TABLE_NAME = 'DIM_SALESPERSON'&#xA;AND TABLE_SCHEMA = 'Behrendt'&#xA;AND TABLE_CATALOG = 'AdventureWorks2016'&#xA; ) &gt; 0&#xA; DROP TABLE Behrendt.DIM_SALESPERSON;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Email"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:Description="Send Mail Task"
+      DTS:DTSID="{3330E8DC-511D-4CD0-96C6-49C16F97179F}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Email"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{88C5D41A-6265-4AAD-AD91-68F3FE0D99E6}"
+          SendMailTask:From="Papercut@papercut.com"
+          SendMailTask:To="Papercut@user.com"
+          SendMailTask:Subject="Task executed"
+          SendMailTask:MessageSource="All tasks has been executed succesfully!" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Insert"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Insert"
+      DTS:DTSID="{2beb401b-83ba-43f4-b77c-b8e7fc1a5592}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Insert"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F1EEA9AC-8C33-4355-AA08-337E76E5CE8D}"
+          SQLTask:SqlStatementSource="INSERT INTO Behrendt.DIM_CUSTOMER&#xA;SELECT DISTINCT C.CustomerID, P.FirstName, P.LastName, P.Title, PA.City, ST.Name TerritoryName, ST.CountryRegionCode, ST.[Group]&#xA;FROM Sales.Customer C&#xA;&#x9;LEFT JOIN Person.Person P ON P.BusinessEntityID = C.PersonID&#xA;&#x9;LEFT JOIN Sales.SalesTerritory ST ON C.TerritoryID = ST.TerritoryID&#xA;&#x9;LEFT JOIN Person.BusinessEntityAddress BEA ON BEA.BusinessEntityID = P.BusinessEntityID&#xA;&#x9;LEFT JOIN Person.Address PA ON PA.AddressID = BEA.AddressID&#xA;&#x9;LEFT JOIN Person.AddressType PAT ON BEA.AddressTypeID = PAT.AddressTypeID&#xA;WHERE PAT.AddressTypeID IS NULL OR PAT.Name = 'Home';&#xA;&#xA;INSERT INTO Behrendt.DIM_SALESPERSON&#xA;SELECT DISTINCT SP.BusinessEntityID SalesPersonID, P.FirstName, P.LastName, P.Title, E.Gender, ST.CountryRegionCode, ST.[Group]&#xA;FROM Sales.SalesPerson SP &#xA;&#x9;LEFT JOIN Person.Person P ON P.BusinessEntityID = SP.BusinessEntityID&#xA;&#x9;LEFT JOIN Sales.SalesTerritory ST ON SP.TerritoryID = ST.TerritoryID&#xA;&#x9;LEFT JOIN HumanResources.Employee E ON E.BusinessEntityID = SP.BusinessEntityID;&#xA;&#xA;INSERT INTO Behrendt.DIM_PRODUCT&#xA;SELECT DISTINCT P.ProductID, P.Name, P.ListPrice, P.Color, PS.Name SubCategoryName, PC.Name CategoryName, P.Weight, P.Size, IIF(SOD.SalesOrderDetailID IS NULL, 0, 1)&#xA;FROM Production.Product P &#xA;&#x9;LEFT JOIN Production.ProductSubcategory PS ON P.ProductSubcategoryID = PS.ProductSubcategoryID&#xA;&#x9;LEFT JOIN Production.ProductCategory PC ON PC.ProductCategoryID = PS.ProductCategoryID&#xA;&#x9;LEFT JOIN Sales.SalesOrderDetail SOD ON SOD.ProductID = P.ProductID;&#xA;&#xA;INSERT INTO Behrendt.FACT_SALES&#xA;SELECT DISTINCT SOD.ProductID, SOH.CustomerID, SOH.SalesPersonID, &#xA;&#x9;DATEPART(yyyy, SOH.OrderDate) * 10000 + DATEPART(mm, SOH.OrderDate) * 100 + DATEPART(dd, SOH.OrderDate) OrderDate, &#xA;&#x9;DATEPART(yyyy, SOH.ShipDate) * 10000 + DATEPART(mm, SOH.ShipDate) * 100 + DATEPART(dd, SOH.ShipDate) ShipDate, &#xA;&#x9;SOD.OrderQty, SOD.UnitPrice, SOD.UnitPriceDiscount, SOD.LineTotal&#xA;FROM Sales.SalesOrderDetail SOD&#xA;&#x9;JOIN Sales.SalesOrderHeader SOH ON SOH.SalesOrderID = SOD.SalesOrderID;&#xA;&#xA;INSERT INTO Behrendt.DIM_TIME (PK_Time)&#xA;SELECT DISTINCT OrderDate FROM Behrendt.FACT_SALES&#xA;UNION &#xA;SELECT DISTINCT ShipDate FROM Behrendt.FACT_SALES&#xA;ORDER BY 1&#xA;&#xA;DECLARE @currentDate date;&#xA;UPDATE Behrendt.DIM_TIME&#xA;SET &#xA;@currentDate = CONVERT(date,convert(char(8), PK_TIME)),&#xA;Rok = DATEPART(yy, @currentDate),&#xA;Kwartal = DATEPART(qq, @currentDate),&#xA;Miesiac = DATEPART(mm, @currentDate),&#xA;Miesiac_slownie = Behrendt.MONTHS.[Name],&#xA;Dzien_tyg_slownie = Behrendt.WEEKS.[Name],&#xA;Dzien_miesiaca = DATEPART(dd, @currentDate)&#xA;FROM Behrendt.MONTHS, Behrendt.WEEKS WHERE MonthID = DATEPART(mm, CONVERT(date,convert(char(8), PK_TIME)))&#xA;AND WeekID = DATEPART(dw, CONVERT(date,convert(char(8), PK_TIME)))&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Reference"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Reference"
+      DTS:DTSID="{fc19bbd4-f15f-477b-af95-c587dddf40e2}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Reference"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F1EEA9AC-8C33-4355-AA08-337E76E5CE8D}"
+          SQLTask:SqlStatementSource="ALTER TABLE Behrendt.FACT_SALES&#xA;ADD CONSTRAINT fk_prod FOREIGN KEY(ProductID) REFERENCES Behrendt.DIM_PRODUCT(ProductID);&#xA;ALTER TABLE Behrendt.FACT_SALES&#xA;ADD CONSTRAINT fk_sales FOREIGN KEY(SalesPersonID) REFERENCES Behrendt.DIM_SALESPERSON(SalesPersonID);&#xA;ALTER TABLE Behrendt.FACT_SALES&#xA;ADD CONSTRAINT fk_cust FOREIGN KEY(CustomerID) REFERENCES Behrendt.DIM_CUSTOMER(CustomerID);&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{9E430CFF-5491-4569-8667-FAC35258AAB5}"
+      DTS:From="Package\Delete"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Create" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{141FE3E4-52C6-4130-949A-36D6AFC9DB81}"
+      DTS:From="Package\Create"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Insert" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{F654B841-D4DF-48EB-9050-CA9EFBFDF769}"
+      DTS:From="Package\Insert"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Reference" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{72808EA7-B452-4A63-8D9B-5EF0105C25C7}"
+      DTS:From="Package\Reference"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Email" />
+  </DTS:PrecedenceConstraints>
+  <DTS:EventHandlers>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnError]"
+      DTS:CreationName="OnError"
+      DTS:DTSID="{CC44E1AE-AF36-4B79-A1D9-6D4044D50093}"
+      DTS:EventID="487"
+      DTS:EventName="OnError"
+      DTS:LocaleID="-1">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="The propagate property of the event"
+          DTS:DTSID="{71B41FD2-68EF-421E-BA32-DB634AC1F3F7}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables />
+    </DTS:EventHandler>
+  </DTS:EventHandlers>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="109,42"
+          Id="Package\Create"
+          TopLeft="202,235" />
+        <NodeLayout
+          Size="109,42"
+          Id="Package\Delete"
+          TopLeft="201.5,149.5" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Email"
+          TopLeft="185,490" />
+        <NodeLayout
+          Size="109,42"
+          Id="Package\Insert"
+          TopLeft="203.5,318" />
+        <NodeLayout
+          Size="126,42"
+          Id="Package\Reference"
+          TopLeft="191.5,410" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="256.25,191.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43.5"
+              Start="0,0"
+              End="0,36">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="257.25,277">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41"
+              Start="0,0"
+              End="0,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="256.25,360">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50"
+              Start="0,0"
+              End="0,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="257.25,452">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38"
+              Start="0,0"
+              End="0,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

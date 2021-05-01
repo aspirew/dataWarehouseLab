@@ -8,7 +8,7 @@
     <TransactionalDeployment>false</TransactionalDeployment>
     <PartitionDeployment>DeployPartitions</PartitionDeployment>
     <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
-    <ProcessingOption>Default</ProcessingOption>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
     <OutputScript></OutputScript>
     <ImpactAnalysisFile></ImpactAnalysisFile>
     <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
@@ -19,44 +19,44 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>/bIfVKHnsRzQ7OK9BVYg9rNU1dc=29.03.2021 17:03:5229.03.2021 17:03:51</TimeStamp>
+        <TimeStamp>SrANWuwLi0yguIRApsZD4YAQqYc=09.04.2021 17:54:5309.04.2021 17:54:53</TimeStamp>
         <ID>
           <String>Adventure Works2016</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>qQOcIPuDzgKbdY9cI+UMoQ4h0do=29.03.2021 17:05:3729.03.2021 17:04:02</TimeStamp>
+        <TimeStamp>7FVkWcmEMDOXxcldkxuAPqqKpaE=09.04.2021 17:55:0209.04.2021 17:55:02</TimeStamp>
         <ID>
           <String>Adventure Works2016</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>A06I7m8PTMt7hguYesdMecsaucQ=29.03.2021 17:10:0829.03.2021 17:10:08</TimeStamp>
+        <TimeStamp>c+vcVdCRqBykN9MA4KoejnPTDiY=09.04.2021 17:58:1409.04.2021 17:56:11</TimeStamp>
         <ID>
-          <String>DIM SALESPERSON</String>
+          <String>DIM CUSTOMER</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Dn18hKQtdS9sUNLBjt8kn4Wi0J8=29.03.2021 17:10:0829.03.2021 17:10:08</TimeStamp>
+        <TimeStamp>0X3wB3uiaOAAfMVU4sjkZsZvSTM=09.04.2021 17:58:1409.04.2021 17:56:11</TimeStamp>
         <ID>
           <String>DIM PRODUCT</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>pgalTNMrnDOHzjvWsNmzwUcFBWE=29.03.2021 17:10:0829.03.2021 17:10:08</TimeStamp>
+        <TimeStamp>B+ikcWCN6cjyqC7Su6De3qVZsuw=09.04.2021 17:58:1409.04.2021 17:56:11</TimeStamp>
         <ID>
-          <String>DIM CUSTOMER</String>
+          <String>DIM SALESPERSON</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>umpLDGbT79OKmsM5iTq9zXO2Qow=29.03.2021 17:10:0829.03.2021 17:10:08h3HXNku7zcuEOpdSbdvhD9ji+Lk=29.03.2021 17:10:0829.03.2021 17:10:08</TimeStamp>
+        <TimeStamp>4rrf9ztL94T218Jgve8RoLrgc3w=09.04.2021 17:58:1409.04.2021 17:56:11k+5VrfrZPjMFIX1vfvCGgr+PKKM=09.04.2021 17:56:1109.04.2021 17:56:11</TimeStamp>
         <ID>
-          <String>Adventure Works2016</String>
+          <String>Adventure Works2016 2</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
@@ -70,6 +70,6 @@
     <Granularity>Coarse</Granularity>
   </Snapshot>
   <AssemblyLocations />
-  <ProcessingComplete>false</ProcessingComplete>
-  <LastDeployed>2021-03-29T16:38:06.983333Z</LastDeployed>
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2021-04-09T15:59:14.623333Z</LastDeployed>
 </DeploymentSnapshot>

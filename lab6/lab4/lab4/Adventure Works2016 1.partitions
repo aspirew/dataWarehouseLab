@@ -1,0 +1,3105 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="32b3af44-95cc-4969-80cb-9e9bad08575b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Adventure Works2016 1</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT SALES</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="35ea3c9c-4555-451e-9e17-c1eab77aaa39">
+          <ID>FACT SALES</ID>
+          <Name>2013</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="e7bdfaa4-08c1-4d46-a6aa-8ca9a149439d">
+            <DataSourceID>Adventure Works2016</DataSourceID>
+            <QueryDefinition>SELECT [Behrendt].[FACT_SALES].[ProductID],[Behrendt].[FACT_SALES].[CustomerID],[Behrendt].[FACT_SALES].[SalesPersonID],[Behrendt].[FACT_SALES].[OrderDate],[Behrendt].[FACT_SALES].[ShipDate],[Behrendt].[FACT_SALES].[OrderQty],[Behrendt].[FACT_SALES].[UnitPrice],[Behrendt].[FACT_SALES].[UnitPriceDiscount],[Behrendt].[FACT_SALES].[LineTotal]
+FROM [Behrendt].[FACT_SALES]
+JOIN [Behrendt].[DIM_TIME] t ON OrderDate = t.PK_TIME
+WHERE t.Rok = 2013</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>56565</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="a2c2ed0e-8a82-4ae6-832d-5f121c92e1ad">
+          <ID>2014</ID>
+          <Name>2014</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="f7821229-5c07-4291-b63e-5711293e9f7b">
+            <DataSourceID>Adventure Works2016</DataSourceID>
+            <QueryDefinition>SELECT [Behrendt].[FACT_SALES].[ProductID],[Behrendt].[FACT_SALES].[CustomerID],[Behrendt].[FACT_SALES].[SalesPersonID],[Behrendt].[FACT_SALES].[OrderDate],[Behrendt].[FACT_SALES].[ShipDate],[Behrendt].[FACT_SALES].[OrderQty],[Behrendt].[FACT_SALES].[UnitPrice],[Behrendt].[FACT_SALES].[UnitPriceDiscount],[Behrendt].[FACT_SALES].[LineTotal]
+FROM [Behrendt].[FACT_SALES]
+JOIN [Behrendt].[DIM_TIME] t ON OrderDate = t.PK_TIME
+WHERE t.Rok = 2014</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>37337</EstimatedRows>
+          <AggregationDesignID>AggregationDesign 3</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="c08d9f84-88e5-4534-b08b-ac2fd53df2ea">
+          <ID>FACT SALES 1</ID>
+          <Name>2011</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="972cced3-dfcb-4e61-a979-b37bcb4cff93">
+            <DataSourceID>Adventure Works2016</DataSourceID>
+            <QueryDefinition>SELECT [Behrendt].[FACT_SALES].[ProductID],[Behrendt].[FACT_SALES].[CustomerID],[Behrendt].[FACT_SALES].[SalesPersonID],[Behrendt].[FACT_SALES].[OrderDate],[Behrendt].[FACT_SALES].[ShipDate],[Behrendt].[FACT_SALES].[OrderQty],[Behrendt].[FACT_SALES].[UnitPrice],[Behrendt].[FACT_SALES].[UnitPriceDiscount],[Behrendt].[FACT_SALES].[LineTotal]
+FROM [Behrendt].[FACT_SALES]
+JOIN [Behrendt].[DIM_TIME] t ON OrderDate = t.PK_TIME
+WHERE t.Rok = 2011</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>5716</EstimatedRows>
+          <AggregationDesignID>AggregationDesign 4</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="ddc92967-ff91-44f0-9ce8-00f69c5c2ded">
+          <ID>2012</ID>
+          <Name>2012</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="abee03ed-04d8-46ae-ad9b-ddbfe8ca187d">
+            <DataSourceID>Adventure Works2016</DataSourceID>
+            <QueryDefinition>SELECT [Behrendt].[FACT_SALES].[ProductID],[Behrendt].[FACT_SALES].[CustomerID],[Behrendt].[FACT_SALES].[SalesPersonID],[Behrendt].[FACT_SALES].[OrderDate],[Behrendt].[FACT_SALES].[ShipDate],[Behrendt].[FACT_SALES].[OrderQty],[Behrendt].[FACT_SALES].[UnitPrice],[Behrendt].[FACT_SALES].[UnitPriceDiscount],[Behrendt].[FACT_SALES].[LineTotal]
+FROM [Behrendt].[FACT_SALES]
+JOIN [Behrendt].[DIM_TIME] t ON OrderDate = t.PK_TIME
+WHERE t.Rok = 2012</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>21689</EstimatedRows>
+          <AggregationDesignID>AggregationDesign 5</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2021-04-18T18:53:00.21Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-04-18T18:53:00.21Z</LastSchemaUpdate>
+          <EstimatedRows>56565</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Customer ID</AttributeID>
+                  <EstimatedCount>19820</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Names</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Title</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>City</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Territory Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Country Region Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Group</AttributeID>
+                  <EstimatedCount>3</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Product ID</AttributeID>
+                  <EstimatedCount>504</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>List Price</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Color</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sub Category Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Category Name</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Weight</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Size</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Is Purchased</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Sales Person ID</AttributeID>
+                  <EstimatedCount>17</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Names</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Title</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Gender</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Country Region Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Group</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 7</ID>
+              <Name>Aggregation 7</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 8</ID>
+              <Name>Aggregation 8</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 9</ID>
+              <Name>Aggregation 9</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation a</ID>
+              <Name>Aggregation a</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation b</ID>
+              <Name>Aggregation b</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation c</ID>
+              <Name>Aggregation c</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation d</ID>
+              <Name>Aggregation d</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation e</ID>
+              <Name>Aggregation e</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation f</ID>
+              <Name>Aggregation f</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 10</ID>
+              <Name>Aggregation 10</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+        <AggregationDesign>
+          <ID>AggregationDesign 1</ID>
+          <Name>AggregationDesign 1</Name>
+          <CreatedTimestamp>2021-04-18T18:54:34.826667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-04-18T18:54:34.826667Z</LastSchemaUpdate>
+          <EstimatedRows>121307</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Customer ID</AttributeID>
+                  <EstimatedCount>19820</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Names</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Title</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>City</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Territory Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Country Region Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Group</AttributeID>
+                  <EstimatedCount>3</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Product ID</AttributeID>
+                  <EstimatedCount>504</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>List Price</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Color</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sub Category Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Category Name</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Weight</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Size</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Is Purchased</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Sales Person ID</AttributeID>
+                  <EstimatedCount>17</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Names</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Title</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Gender</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Country Region Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Group</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Customer ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 7</ID>
+              <Name>Aggregation 7</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 8</ID>
+              <Name>Aggregation 8</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 9</ID>
+              <Name>Aggregation 9</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation a</ID>
+              <Name>Aggregation a</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation b</ID>
+              <Name>Aggregation b</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation c</ID>
+              <Name>Aggregation c</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation d</ID>
+              <Name>Aggregation d</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation e</ID>
+              <Name>Aggregation e</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation f</ID>
+              <Name>Aggregation f</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 10</ID>
+              <Name>Aggregation 10</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 11</ID>
+              <Name>Aggregation 11</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 12</ID>
+              <Name>Aggregation 12</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+        <AggregationDesign>
+          <ID>AggregationDesign 2</ID>
+          <Name>AggregationDesign 2</Name>
+          <CreatedTimestamp>2021-04-18T18:55:29.613333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-04-18T18:55:29.613333Z</LastSchemaUpdate>
+          <EstimatedRows>121307</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Customer ID</AttributeID>
+                  <EstimatedCount>19820</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Names</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Title</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>City</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Territory Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Country Region Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Group</AttributeID>
+                  <EstimatedCount>3</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Product ID</AttributeID>
+                  <EstimatedCount>504</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>List Price</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Color</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sub Category Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Category Name</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Weight</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Size</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Is Purchased</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Sales Person ID</AttributeID>
+                  <EstimatedCount>17</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Names</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Title</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Gender</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Country Region Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Group</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Customer ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 7</ID>
+              <Name>Aggregation 7</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 8</ID>
+              <Name>Aggregation 8</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 9</ID>
+              <Name>Aggregation 9</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation a</ID>
+              <Name>Aggregation a</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation b</ID>
+              <Name>Aggregation b</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation c</ID>
+              <Name>Aggregation c</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation d</ID>
+              <Name>Aggregation d</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation e</ID>
+              <Name>Aggregation e</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation f</ID>
+              <Name>Aggregation f</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 10</ID>
+              <Name>Aggregation 10</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 11</ID>
+              <Name>Aggregation 11</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 12</ID>
+              <Name>Aggregation 12</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+        <AggregationDesign>
+          <ID>AggregationDesign 3</ID>
+          <Name>AggregationDesign 3</Name>
+          <CreatedTimestamp>2021-04-18T18:56:24.16Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-04-18T18:56:24.16Z</LastSchemaUpdate>
+          <EstimatedRows>37337</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Customer ID</AttributeID>
+                  <EstimatedCount>19820</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Names</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Title</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>City</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Territory Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Country Region Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Group</AttributeID>
+                  <EstimatedCount>3</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Product ID</AttributeID>
+                  <EstimatedCount>504</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>List Price</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Color</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sub Category Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Category Name</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Weight</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Size</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Is Purchased</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Sales Person ID</AttributeID>
+                  <EstimatedCount>17</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Names</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Title</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Gender</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Country Region Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Group</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 7</ID>
+              <Name>Aggregation 7</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 8</ID>
+              <Name>Aggregation 8</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 9</ID>
+              <Name>Aggregation 9</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation a</ID>
+              <Name>Aggregation a</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation b</ID>
+              <Name>Aggregation b</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation c</ID>
+              <Name>Aggregation c</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation d</ID>
+              <Name>Aggregation d</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation e</ID>
+              <Name>Aggregation e</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation f</ID>
+              <Name>Aggregation f</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 10</ID>
+              <Name>Aggregation 10</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+        <AggregationDesign>
+          <ID>AggregationDesign 4</ID>
+          <Name>AggregationDesign 4</Name>
+          <CreatedTimestamp>2021-04-18T18:57:13.886667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-04-18T18:57:13.886667Z</LastSchemaUpdate>
+          <EstimatedRows>5716</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Customer ID</AttributeID>
+                  <EstimatedCount>19820</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Names</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Title</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>City</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Territory Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Country Region Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Group</AttributeID>
+                  <EstimatedCount>3</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Product ID</AttributeID>
+                  <EstimatedCount>504</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>List Price</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Color</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sub Category Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Category Name</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Weight</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Size</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Is Purchased</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Sales Person ID</AttributeID>
+                  <EstimatedCount>17</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Names</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Title</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Gender</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Country Region Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Group</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 7</ID>
+              <Name>Aggregation 7</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 8</ID>
+              <Name>Aggregation 8</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 9</ID>
+              <Name>Aggregation 9</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation a</ID>
+              <Name>Aggregation a</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation b</ID>
+              <Name>Aggregation b</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation c</ID>
+              <Name>Aggregation c</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation d</ID>
+              <Name>Aggregation d</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+        <AggregationDesign>
+          <ID>AggregationDesign 5</ID>
+          <Name>AggregationDesign 5</Name>
+          <CreatedTimestamp>2021-04-18T18:57:58.226667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-04-18T18:57:58.226667Z</LastSchemaUpdate>
+          <EstimatedRows>21689</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Customer ID</AttributeID>
+                  <EstimatedCount>19820</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Names</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Title</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>City</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Territory Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Country Region Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Group</AttributeID>
+                  <EstimatedCount>3</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Product ID</AttributeID>
+                  <EstimatedCount>504</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>List Price</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Color</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sub Category Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Category Name</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Weight</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Size</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Is Purchased</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Sales Person ID</AttributeID>
+                  <EstimatedCount>17</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Names</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Title</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Gender</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Country Region Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Group</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 7</ID>
+              <Name>Aggregation 7</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 8</ID>
+              <Name>Aggregation 8</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 9</ID>
+              <Name>Aggregation 9</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation a</ID>
+              <Name>Aggregation a</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation b</ID>
+              <Name>Aggregation b</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation c</ID>
+              <Name>Aggregation c</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Category Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation d</ID>
+              <Name>Aggregation d</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation e</ID>
+              <Name>Aggregation e</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation f</ID>
+              <Name>Aggregation f</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>DIM CUSTOMER</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM PRODUCT</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>DIM SALESPERSON</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Group</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

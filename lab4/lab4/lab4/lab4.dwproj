@@ -8,28 +8,28 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>Adventure Works2016 1.cube</Name>
-      <FullPath>Adventure Works2016 1.cube</FullPath>
+      <Name>Adventure Works2016 2.cube</Name>
+      <FullPath>Adventure Works2016 2.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>Adventure Works2016 1.partitions</Name>
-          <FullPath>Adventure Works2016 1.partitions</FullPath>
+          <Name>Adventure Works2016 2.partitions</Name>
+          <FullPath>Adventure Works2016 2.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>DIM SALESPERSON 1.dim</Name>
-      <FullPath>DIM SALESPERSON 1.dim</FullPath>
+      <Name>DIM CUSTOMER 1.dim</Name>
+      <FullPath>DIM CUSTOMER 1.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>DIM PRODUCT 1.dim</Name>
       <FullPath>DIM PRODUCT 1.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM CUSTOMER.dim</Name>
-      <FullPath>DIM CUSTOMER.dim</FullPath>
+      <Name>DIM SALESPERSON 1.dim</Name>
+      <FullPath>DIM SALESPERSON 1.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
